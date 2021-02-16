@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module expense_tab</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>expense_tab</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/redl/Local%20Documents/Master%20DSBA/M1/Python/Project/Expense_Tracker_v3/view/expense_tab.py">/Users/redl/Local Documents/Master DSBA/M1/Python/Project/Expense_Tracker_v3/view/expense_tab.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tkinter.messagebox.html">tkinter.messagebox</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top><a href="tkinter.ttk.html">tkinter.ttk</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="expense_tab.html#ExpenseTab">ExpenseTab</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ExpenseTab">class <strong>ExpenseTab</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ExpenseTab">ExpenseTab</a>(tab_control,&nbsp;expense_controller,&nbsp;user_controller,&nbsp;username)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ExpenseTab-__init__"><strong>__init__</strong></a>(self, tab_control, expense_controller, user_controller, username)</dt><dd><tt>Initializes&nbsp;the&nbsp;expense&nbsp;tab&nbsp;and&nbsp;creates&nbsp;all&nbsp;elements&nbsp;of&nbsp;the&nbsp;visual&nbsp;interface</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-calculate_budget_level"><strong>calculate_budget_level</strong></a>(self)</dt><dd><tt>Calculates&nbsp;whether&nbsp;the&nbsp;custom&nbsp;budget&nbsp;(in&nbsp;preferences)&nbsp;is&nbsp;already&nbsp;exceeded&nbsp;or&nbsp;not&nbsp;and&nbsp;generate&nbsp;a&nbsp;message&nbsp;to<br>
+display.</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-delete_expense_data"><strong>delete_expense_data</strong></a>(self)</dt><dd><tt>Remove&nbsp;the&nbsp;selected&nbsp;item&nbsp;from&nbsp;the&nbsp;treeview&nbsp;and&nbsp;the&nbsp;database,&nbsp;then&nbsp;update&nbsp;the&nbsp;sum&nbsp;of&nbsp;all&nbsp;expenses&nbsp;and&nbsp;the<br>
+budget&nbsp;difference.<br>
+This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;clicking&nbsp;the&nbsp;'Delete'&nbsp;button</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-insert_expense_data"><strong>insert_expense_data</strong></a>(self)</dt><dd><tt>Add&nbsp;a&nbsp;new&nbsp;expense&nbsp;item&nbsp;both&nbsp;to&nbsp;the&nbsp;treeview&nbsp;and&nbsp;to&nbsp;the&nbsp;database.&nbsp;Then&nbsp;update&nbsp;the&nbsp;sum&nbsp;of&nbsp;all&nbsp;expenses&nbsp;and&nbsp;the<br>
+budget&nbsp;difference.<br>
+This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;clicking&nbsp;the&nbsp;'Insert'&nbsp;button</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-refresh_categories"><strong>refresh_categories</strong></a>(self, category_list)</dt><dd><tt>Refresh&nbsp;the&nbsp;category&nbsp;drop-down&nbsp;menu.&nbsp;This&nbsp;is&nbsp;called&nbsp;after&nbsp;configuring&nbsp;categories&nbsp;in&nbsp;the&nbsp;preferences</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-treeview_sort_date"><strong>treeview_sort_date</strong></a>(self, date_col, reverse)</dt><dd><tt>Sort&nbsp;the&nbsp;table&nbsp;by&nbsp;date&nbsp;when&nbsp;clicking&nbsp;on&nbsp;the&nbsp;date&nbsp;column</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-treeview_sort_price"><strong>treeview_sort_price</strong></a>(self, col, reverse: bool)</dt><dd><tt>Sort&nbsp;the&nbsp;table&nbsp;by&nbsp;price&nbsp;when&nbsp;clicking&nbsp;on&nbsp;the&nbsp;price&nbsp;column</tt></dd></dl>
+
+<dl><dt><a name="ExpenseTab-update_treeview_from_existing_database"><strong>update_treeview_from_existing_database</strong></a>(self)</dt><dd><tt>If&nbsp;the&nbsp;database&nbsp;of&nbsp;expenses&nbsp;already&nbsp;exist&nbsp;for&nbsp;this&nbsp;username,&nbsp;display&nbsp;it&nbsp;back&nbsp;into&nbsp;the&nbsp;treeview</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>convert_to_EUR</strong> = [0.62, 0.65, 0.93, 0.13, 0.13, 1, 1.11, 0.011, 0.008, 0.00056, 0.094, 0.58, 0.092, 0.85, 0.098, 0.31]</dl>
+
+<dl><dt><strong>currency_code_list</strong> = ['AUD', 'CAD', 'CHF', 'CNY', 'DKK', 'EUR', 'GBP', 'INR', 'JPY', 'LBP', 'NOK', 'NZD', 'MAD', 'USD', 'SEK', 'TND']</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

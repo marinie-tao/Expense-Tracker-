@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module preferences_tab</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>preferences_tab</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/redl/Local%20Documents/Master%20DSBA/M1/Python/Project/Expense_Tracker_v3/view/preferences_tab.py">/Users/redl/Local Documents/Master DSBA/M1/Python/Project/Expense_Tracker_v3/view/preferences_tab.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tkinter.messagebox.html">tkinter.messagebox</a><br>
+</td><td width="25%" valign=top><a href="tkinter.ttk.html">tkinter.ttk</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="preferences_tab.html#PreferencesTab">PreferencesTab</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PreferencesTab">class <strong>PreferencesTab</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#PreferencesTab">PreferencesTab</a>(tab_control,&nbsp;username,&nbsp;user_controller,&nbsp;expense_tab)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PreferencesTab-__init__"><strong>__init__</strong></a>(self, tab_control, username, user_controller, expense_tab)</dt><dd><tt>Initializes&nbsp;the&nbsp;preferences&nbsp;tab,&nbsp;where&nbsp;the&nbsp;user&nbsp;can&nbsp;customise&nbsp;the&nbsp;application,&nbsp;with&nbsp;all&nbsp;visual&nbsp;elements</tt></dd></dl>
+
+<dl><dt><a name="PreferencesTab-add_category"><strong>add_category</strong></a>(self, new_category)</dt><dd><tt>Verifies&nbsp;the&nbsp;new&nbsp;category&nbsp;name,&nbsp;adds&nbsp;it&nbsp;to&nbsp;the&nbsp;list&nbsp;and&nbsp;calls&nbsp;the&nbsp;user&nbsp;controller&nbsp;to&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;DB<br>
+Shows&nbsp;a&nbsp;messagebox&nbsp;in&nbsp;case&nbsp;the&nbsp;category&nbsp;already&nbsp;exists</tt></dd></dl>
+
+<dl><dt><a name="PreferencesTab-remove_category"><strong>remove_category</strong></a>(self, listbox)</dt><dd><tt>Removes&nbsp;a&nbsp;selected&nbsp;category&nbsp;from&nbsp;the&nbsp;list&nbsp;and&nbsp;calls&nbsp;the&nbsp;user&nbsp;controller&nbsp;to&nbsp;remove&nbsp;it&nbsp;from&nbsp;the&nbsp;DB.<br>
+Shows&nbsp;a&nbsp;messagebox&nbsp;in&nbsp;case&nbsp;of&nbsp;failure</tt></dd></dl>
+
+<dl><dt><a name="PreferencesTab-set_budget"><strong>set_budget</strong></a>(self, budget, chosen_period)</dt><dd><tt>Passes&nbsp;the&nbsp;chosen&nbsp;budget&nbsp;and&nbsp;period&nbsp;to&nbsp;the&nbsp;user&nbsp;controller,&nbsp;to&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;database.<br>
+Shows&nbsp;a&nbsp;messagebox&nbsp;for&nbsp;success/failure</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>currency_list</strong> = ['AUD', 'CAD', 'CHF', 'CNY', 'DKK', 'EUR', 'GBP', 'INR', 'JPY', 'LBP', 'NOK', 'NZD', 'MAD', 'USD', 'SEK', 'TND']<br>
+<strong>period_list</strong> = ['per day', 'per week', 'per month', 'per year']</td></tr></table>
+</body></html>
